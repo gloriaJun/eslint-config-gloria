@@ -27,8 +27,8 @@ deploy:
   provider: script
   script: npx lerna publish -y from-git
   skip_cleanup: true
-  on:
-    tags: true
+  # on:
+  #   tags: true
 # notifications:
 #   email: false
 #   slack:
