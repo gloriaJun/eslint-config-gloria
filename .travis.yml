@@ -1,0 +1,36 @@
+language: node_js
+
+node_js:
+  # node latest stable Node.js release
+  - node
+  # lts/* latest LTS Node.js release
+  #- 'lts/*'
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - main
+
+before_install:
+  - npm install -g yarn --cache-min 999999999
+
+install:
+  - yarn install
+
+jobs:
+  include:
+    - stage: npm publish
+      before_script:
+        - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+      script:
+        - npm publish
+# notifications:
+#   email: false
+#   slack:
+#     rooms:
+#       - glriaroom:$SLACK_TOKEN#devops
+#     on_success: change # default : always
+#     on_failure: always # default : always
