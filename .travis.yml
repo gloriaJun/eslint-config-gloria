@@ -20,13 +20,16 @@ before_install:
 install:
   - yarn install
 
-jobs:
-  include:
-    - stage: npm publish
-      before_script:
-        - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
-      script:
-        - npm publish
+before_deploy:
+  - npm config set //registry.npmjs.org/:_authToken=$NPM_TOKEN
+
+deploy:
+  provider: script
+  script: npx lerna publish -y from-git
+  skip_cleanup: true
+  on:
+    tags: true
+    branch: main
 # notifications:
 #   email: false
 #   slack:

@@ -5,6 +5,7 @@
   "repository": "https://github.com/gloriaJun/gloria-eslint-config.git",
   "author": "gloriaJun <pureainu@gmail.com>",
   "license": "MIT",
+  "private": true,
   "workspaces": [
     "packages/*"
   ],
@@ -13,7 +14,8 @@
     "postinstall": "lerna bootstrap",
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start",
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "test": "lerna run test"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.9.0",
