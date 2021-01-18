@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gloria",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "repository": "https://github.com/gloriaJun/gloria-eslint-config.git",
   "author": "gloriaJun <pureainu@gmail.com>",
@@ -22,12 +22,14 @@
     "bootstrap": "lerna bootstrap",
     "start": "lerna run start",
     "build": "lerna run build",
-    "test": "lerna run test"
+    "test": "lerna run test",
+    "release": "grmc rel -c .config/release.yml"
   },
   "devDependencies": {
     "eslint": "^7.12.1",
-    "prettier": "^2.1.2",
-    "lerna": "^3.22.1"
+    "grmc": "^1.2.0",
+    "lerna": "^3.22.1",
+    "prettier": "^2.1.2"
   },
   "dependencies": {}
 }

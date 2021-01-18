@@ -1,0 +1,19 @@
+baseUrl: https://api.github.com
+token:
+
+repo: { owner: gloriaJun, name: eslint-config-gloria }
+
+branch: { master: main, develop: develop, release: release, hotfix: hotfix }
+
+# tag: { prefix: '' }
+
+release:
+  {
+    title:
+      {
+        major: '%tag_name% (%today%)',
+        minor: '%tag_name% (%today%)',
+        patch: '%tag_name% (%today%)',
+      },
+    labels: [],
+  }
