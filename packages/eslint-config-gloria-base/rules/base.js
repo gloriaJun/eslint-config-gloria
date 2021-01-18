@@ -1,6 +1,6 @@
 module.exports = {
   plugins: [],
-  extends: [],
+  extends: ['plugin:prettier/recommended'],
   settings: {},
   rules: {},
 };
