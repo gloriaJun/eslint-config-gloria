@@ -4,6 +4,9 @@
   "main": "index.js",
   "repository": "https://github.com/gloriaJun/gloria-eslint-config.git",
   "author": "gloriaJun <pureainu@gmail.com>",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "keywords": [
     "eslint",
     "eslintconfig",
