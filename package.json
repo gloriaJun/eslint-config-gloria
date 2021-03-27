@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-gloria",
-  "version": "1.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/gloriaJun/gloria-eslint-config.git",
   "author": "gloriaJun <pureainu@gmail.com>",
