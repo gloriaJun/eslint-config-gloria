@@ -1,28 +1,11 @@
 # gloria-eslint-config
 
-[![npm version](https://badge.fury.io/js/gloria-eslint-config.svg)](https://badge.fury.io/js/gloria-eslint-config)
-[![Build Status](https://travis-ci.com/gloriaJun/gloria-eslint-config.svg?branch=main)](https://travis-ci.com/gloriaJun/gloria-eslint-config)
+[![Build Status](https://travis-ci.com/gloriaJun/gloria-eslint-config.svg?branch=main)](https://travis-ci.com/gloriaJun/gloria-eslint-config) <br />
 
 These are settings for ESLint and Prettier used by gloria.
 
-## What it does
+## npm version
 
-...
+- eslint-config-gloria-base <br/>
+[![npm(eslint-config-gloria-base)](https://badge.fury.io/js/eslint-config-gloria-base.svg)](https://badge.fury.io/js/geslint-config-gloria-base)
 
-## Installing
-
-1. Install dependencies
-
-```bash
-yarn install -D eslint-config-gloria-base
-```
-
-2. modify `.eslintrc.js`
-
-```javascript
-{
-  "extends": [
-    "gloria-base"
-  ]
-}
-```
